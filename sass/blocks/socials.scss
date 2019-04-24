@@ -1,0 +1,33 @@
+.socials {
+  list-style: none;
+}
+
+.socials__item {
+  margin: 0 px-to-rem(7px);
+}
+
+.socials__svg {
+  fill: $white;
+  width: 21px;
+  height: 21px;
+}
+
+@media (min-width: 980px) {
+  .socials {
+
+    &::after {
+      width: 1px;
+      height: 65px;
+      background-color: $white;
+      display: block;
+      content: "";
+      transform: translateX(10px);
+      margin-top: px-to-rem(13px);
+    }
+
+  }
+
+  .socials__item {
+    margin: px-to-rem(7px) 0;
+  }
+}

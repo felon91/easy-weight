@@ -16,6 +16,7 @@ body {
 	hyphens: auto;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
+	background: linear-gradient(180deg, #F1FFFE 0%, rgba(194, 253, 232, 0.73) 47.92%, rgba(248, 255, 251, 0.94) 100%);
 }
 
 .container {
@@ -23,5 +24,5 @@ body {
 }
 
 .wrap {
-	@include min-max(320px, 1140px, 15px);
+	@include min-max(320px, 1160px, 20px);
 }
