@@ -12,6 +12,11 @@
   height: 21px;
 }
 
+.socials--footer {
+  display: flex;
+  padding: 0;
+}
+
 @media (min-width: 980px) {
   .socials {
 
@@ -29,5 +34,17 @@
 
   .socials__item {
     margin: px-to-rem(7px) 0;
+  }
+
+  .socials--footer {
+
+    &::after {
+      display: none;
+    }
+
+    .socials__item {
+      margin: 0 px-to-rem(7px);
+    }
+
   }
 }

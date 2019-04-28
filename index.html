@@ -5,9 +5,89 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/all.min.css" type="text/css"/>
+  <script src="js/all.min.js"></script>
 </head>
 <body>
 <div class="container">
+
+  <div class="form-modal">
+    <div class="form-modal__block">
+      <button class="form-modal__close">
+        <img src="img/close.svg" alt="Закрыть">
+      </button>
+      <p class="form-modal__title">Базовый курс</p>
+      <form action="">
+        <div class="form-modal__input">
+          <label for="modal-name">Ваше имя</label>
+          <input id="modal-name" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="form-modal__input">
+          <label for="modal-phone">Ваш телефон</label>
+          <input id="modal-phone" type="tel" name="phone" placeholder="Введите номер телефона">
+        </div>
+        <div class="form-modal__input">
+          <label for="modal-email">Ваш email</label>
+          <input id="modal-email" type="email" name="email" placeholder="Введите email">
+        </div>
+        <div class="form-modal__button">
+          <button type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="bolbat" class="modal">
+    <div class="modal__block">
+      <button class="modal__close">
+        <img src="img/close.svg" alt="Закрыть">
+      </button>
+      <p class="modal__name">Виктория Болбат</p>
+      <p class="modal__post">Диетолог, врач, гештальт-консультант.</p>
+      <p>- Окончила Белорусский государственный медицинский университет в 2013 году по специальности «врач анестезиолог-реаниматолог». В настоящее время работаю по специальности «врач-эндокринолог», а так же провожу индивидуальные консультации по вопросам питания и снижения веса.</p>
+      <p>- С 2014 года работаю в диетологии. Специализировалась на вопросах грудного вскармливания, питания детей до 3-х лет, питания во время беременности, питания при снижении веса. Образование в сфере диетологии: Белорусская Медицинская академия последипломного образования «Клиническое питание», «Эндокринология». Московский гештальт-институт «Нарушения пищевого поведения».</p>
+      <p>- С начала 2017 года изучаю гештальт-терапию (направление психотерапии), в настоящее время обучаюсь на второй ступени, углубленно изучаю вопросы психологии лишнего веса и нарушения пищевого поведения (специализация «Нарушения пищевого поведения»).</p>
+      <p>- С начала 2017 года изучаю гештальт-терапию (направление психотерапии), в настоящее время обучаюсь на второй ступени, углубленно изучаю вопросы психологии лишнего веса и нарушения пищевого поведения (специализация «Нарушения пищевого поведения»).</p>
+      <p>- Имею личный опыт снижения веса на 30 кг и успешного удержания веса в течение более 6 лет.</p>
+      <p>- Автор и эксперт более десятка статей для центральных белорусских интернет-порталов (tut.by, citydog.by, sportweek.by, rebenok.by, 1prof.by и др), для газет и журналов («Fascion Collection Belarus», «Ваше здоровье», "Звязда", "Про нефть", «Народная газета», «СБ-Беларусь сегодня»).</p>
+      <p>- Участница телевизионных передач и проектов на телеканалах СТВ ("Утро. Студия хорошего настроения"), ОНТ ("Наше утро"), Беларусь 1 ("Перезагрузка"), Беларусь 5 («Спортмикс»), Беларусь2 (Телеутро, #pincode), БелСАТ («Людскiя справы», «Я не буду это есть!»), основной консультант телевизионного проекта «Спортмикс» на телеканале Беларусь 5/Беларусь 24.</p>
+      <p>- Провела более 50 семинаров и вебинаров</p>
+      <p>- Сотрудничаю с фитнес-клубами (Адреналин, Mart-фитнес, Dzetki.by, GYM24), провожу тренинги и мастер-классы по питанию для корпоративных клиентов.</p>
+    </div>
+  </div>
+  <div class="fixed-menu">
+    <div class="fixed-menu__wrap wrap">
+      <button class="fixed-menu__close" aria-label="Закрыть">
+        <img src="img/close-menu.svg" alt="Закрыть">
+      </button>
+      <div class="fixed-menu__logo">
+        <img class="header__logo-img" src="img/logo.png" alt="Easy weight">
+      </div>
+      <ul class="fixed-menu__list">
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#history">Найди свою историю</a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#advantages">Наши преимущества</a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#video">Видео</a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#author">Об авторе</a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#result">Результаты</a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#programm">Программа</a>
+        </li>
+        <li class="fixed-menu__item">
+          <a class="fixed-menu__link" href="#article">Статьи</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <header class="header">
     <div class="header__wrap wrap">
       <div class="header__top">
@@ -16,12 +96,12 @@
             <img class="header__logo-img" src="img/logo.png" alt="Easy weight">
           </a>
         </div>
-        <div class="header__hamburger hamburger">
+        <button class="header__hamburger hamburger">
           <img src="img/hamburger.svg" alt="Меню">
-        </div>
+        </button>
       </div>
       <h1 class="header__title">без диет.<br> без запретов.<br> без спорта.</h1>
-      <a class="header__link" href="#">Узнать больше</a>
+      <a class="header__link" href="#steps">Узнать больше</a>
       <ul class="header__socials socials">
         <li class="socials__item">
           <a class="socials__link" href="#">
@@ -61,23 +141,462 @@
       </li>
     </ul>
   </header>
-  <section class="history">
+  <section id="history" class="history">
     <div class="history__wrap wrap">
       <h2 class="history__title">Курс для тебя, если узнаешь свою историю</h2>
-      <ul class="history__list shape-list">
-        <li class="shape-list__item">В 95% случаев потерянный вес возвращается</li>
-        <li class="shape-list__item">Невозможно избавиться от «зависимости от сладкого»</li>
-        <li class="shape-list__item">Тяжело соблюдать диеты</li>
-        <li class="shape-list__item">От фитнеса вес только растет</li>
-        <li class="shape-list__item">Сумасшедший темп жизни не дает наладить нормальный режим питания и физической активности</li>
-        <li class="shape-list__item">Неудовлетворенность и разочарование в себе</li>
-        <li class="shape-list__item">Вес растет с возрастом, после родов, из-за гормональных колебаний</li>
-        <li class="shape-list__item">Проблемы в пищевом поведении</li>
-        <li class="shape-list__item">После диет приходят срывы</li>
-        <li class="shape-list__item">Стрессы провоцируют переедание</li>
+      <div class="history__relative">
+        <picture>
+          <source media="(min-width: 980px)"
+                  srcset="img/eat-desktop.png"
+          >
+          <img class="history__img" src="img/eat-tablet.png" alt="Еда">
+        </picture>
+        <ul class="history__list shape-list">
+          <li class="shape-list__item">В 95% случаев потерянный вес возвращается</li>
+          <li class="shape-list__item">Невозможно избавиться от «зависимости от сладкого»</li>
+          <li class="shape-list__item">Тяжело соблюдать диеты</li>
+          <li class="shape-list__item">От фитнеса вес только растет</li>
+          <li class="shape-list__item">Сумасшедший темп жизни не дает наладить нормальный режим питания и физической активности</li>
+          <li class="shape-list__item">Неудовлетворенность и разочарование в себе</li>
+          <li class="shape-list__item">Вес растет с возрастом, после родов, из-за гормональных колебаний</li>
+          <li class="shape-list__item">Проблемы в пищевом поведении</li>
+          <li class="shape-list__item">После диет приходят срывы</li>
+          <li class="shape-list__item">Стрессы провоцируют переедание</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="advantages" class="advantages">
+    <div class="advantages__wrap wrap">
+      <h2 class="advantages__title">Преимущества нашей программы</h2>
+      <ul class="advantages__list programm">
+        <li class="programm__item">
+          <img class="programm__icon" src="img/icon1.svg" alt="Причина 1">
+          <p class="programm__text">Мы работаем не с симптомом а с его внутренней причиной:</p>
+        </li>
+        <li class="programm__item">
+          <img class="programm__icon" src="img/icon2.svg" alt="Причина 2">
+          <p class="programm__text">Доказательная диетология с проработкой психологических аспектов переедания;</p>
+        </li>
+        <li class="programm__item">
+          <img class="programm__icon" src="img/icon3.svg" alt="Причина 3">
+          <p class="programm__text">Ежедневный контроль рациона</p>
+        </li>
+        <li class="programm__item">
+          <img class="programm__icon" src="img/icon4.svg" alt="Причина 4">
+          <p class="programm__text">Обретение навыков осознанного питания, которые помогут Вам сохранить стройность навсегда</p>
+        </li>
+        <li class="programm__item">
+          <img class="programm__icon" src="img/icon5.svg" alt="Причина 5">
+          <p class="programm__text">Авторская программа осознанного питания диетолога, врача Виктории Болбат;</p>
+        </li>
       </ul>
     </div>
   </section>
+  <section id="video" class="video">
+    <div class="video__wrap wrap">
+      <h2 class="video__title">Видео</h2>
+      <div class="video__block">
+        <video controls preload="metadata" width="783" height="440" poster="img/poster.jpg">
+          <source src="img/video-min.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+  <section id="author" class="author">
+    <div class="author__wrap wrap">
+      <h2 class="author__title">Автор курсов</h2>
+      <div class="author__slider owl-carousel">
+        <ul class="author__info">
+          <li class="author__description">
+            <p class="author__name">Виктория Болбат</p>
+            <p class="author__post">Диетолог, врач, гештальт-консультант.</p>
+            <p>- Окончила Белорусский государственный медицинский университет в 2013 году по специальности «врач анестезиолог-реаниматолог». В настоящее время работаю по специальности «врач-эндокринолог», а так же провожу индивидуальные консультации по вопросам питания и снижения веса.</p>
+            <p>- С 2014 года работаю в диетологии. Специализировалась на вопросах грудного вскармливания, питания детей до 3-х лет, питания во время беременности, питания при снижении веса. Образование в сфере диетологии: Белорусская Медицинская академия последипломного образования «Клиническое питание», «Эндокринология». Московский гештальт-институт «Нарушения пищевого поведения».</p>
+            <p> - С начала 2017 года изучаю гештальт-терапию (направление психотерапии), в настоящее время обучаюсь на второй ступени, углубленно изучаю вопросы психологии лишнего веса и нарушения пищевого поведения (специализация «Нарушения пищевого поведения»).</p>
+            <a data-modal="bolbat" class="author__link" href="#">Читать далее...</a>
+          </li>
+          <li class="author__photo">
+            <figure class="author__figure">
+              <img class="author__img" src="img/author.png" alt="Виктория Болбат">
+              <figcaption>
+                <p class="author__img-name">Виктория Болбат.</p>
+                <p class="author__img-post">Диетолог, врач, гештальт-консультант</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="author__info">
+          <li class="author__description">
+            <p class="author__name">Виктория Болбат</p>
+            <p class="author__post">Диетолог, врач, гештальт-консультант.</p>
+            <p>- Окончила Белорусский государственный медицинский университет в 2013 году по специальности «врач анестезиолог-реаниматолог». В настоящее время работаю по специальности «врач-эндокринолог», а так же провожу индивидуальные консультации по вопросам питания и снижения веса.</p>
+            <p>- С 2014 года работаю в диетологии. Специализировалась на вопросах грудного вскармливания, питания детей до 3-х лет, питания во время беременности, питания при снижении веса. Образование в сфере диетологии: Белорусская Медицинская академия последипломного образования «Клиническое питание», «Эндокринология». Московский гештальт-институт «Нарушения пищевого поведения».</p>
+            <p> - С начала 2017 года изучаю гештальт-терапию (направление психотерапии), в настоящее время обучаюсь на второй ступени, углубленно изучаю вопросы психологии лишнего веса и нарушения пищевого поведения (специализация «Нарушения пищевого поведения»).</p>
+            <a data-modal="bolbat" class="author__link" href="#">Читать далее...</a>
+          </li>
+          <li class="author__photo">
+            <figure class="author__figure">
+              <img class="author__img" src="img/author.png" alt="Виктория Болбат">
+              <figcaption>
+                <p class="author__img-name">Виктория Болбат.</p>
+                <p class="author__img-post">Диетолог, врач, гештальт-консультант</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="steps" class="steps">
+    <div class="steps__wrap wrap">
+      <h2 class="steps__title">Этапы программы</h2>
+      <ol class="steps__list">
+        <li class="steps__item">
+          <p class="steps__type">Делаешь замеры тела</p>
+          <p class="steps__text">Курс комфортного похудения длится 13 недель. Перед началом необходимо будет произвести замеры тела, чтобы потом было с чем сравнить результат</p>
+        </li>
+        <li class="steps__item">
+          <p class="steps__type">Исследуешь свой фактический рацион</p>
+          <p class="steps__text">Обязательный этап работы с весом и питанием - исследование Вашего фактического рациона питания. Вы можете многое не замечать, о многом не задумываться и думать, что питаетесь совсем не так, как это происходит на самом деле. Только так можно найти грубые ошибки, которые Вам мешают, и проработать их</p>
+        </li>
+        <li class="steps__item">
+          <p class="steps__type">Настраиваешь фокус внимания на себе и с любовью</p>
+          <p class="steps__text">Основа курса — внимательное отношение к себе и своим потребностям. Иногда нам хочется легкости и активности, иногда же нас тянет на тяжелую и калорийную пищу. Это не просто причуды Вашего характера. Всему есть свое объяснение. И только докопавшись до внутренней причины проблемы, можно, действительно, ее решить.</p>
+        </li>
+        <li class="steps__item">
+          <p class="steps__type">Выполняешь задания и следишь за питанием</p>
+          <p class="steps__text">Ты будешь получать задания не только по питанию, но и психологические упражнения для работы с пищевым поведением. Кроме того, мы подготовили для Вас сюрприз: бонусные разделы на тему... Осознанный контроль калорийности, распределение основных питательных веществ и умеренная физическая активность – это альфа и омега в снижении веса. Все научные медицинские сообщества давно пришли к весу, что ни одна диета не сравнится с контролем калорийности для снижения веса. Главная цель — понять, как ты питаешься повседневно, а потом определить оптимальное количество потребляемых калорий</p>
+        </li>
+        <li class="steps__item">
+          <p class="steps__type">Задаешь вопросы и получаешь ответы</p>
+          <p class="steps__text">На протяжении всего курса с тобой работает куратор, который поддерживает тебя на пути к цели, дает необходимые рекомендации. Наши кураторы будут готовы ответить тебе почти в любое время в режиме общего чата или личного общения. Наши кураторы имеют подготовку по диетологии и осознанному питанию и медицинское образование.</p>
+        </li>
+        <li class="steps__item">
+          <p class="steps__type">Делишься достижениями</p>
+          <p class="steps__text">У тебя будет возможность обсудить свои результаты и получить поддержку в чате с такими же участниками, как и ты.</p>
+        </li>
+        <li class="steps__item">
+          <p class="steps__type">Радуешься результату</p>
+          <p class="steps__text">Результат после курса – это не просто цифра на весах. Это кое-что гораздо большее. Это – целая новая жизнь. Не веришь? Запишись!)</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="result" class="results">
+    <div class="results__wrap wrap">
+      <h2 class="results__title">результаты наших учениц</h2>
+      <div class="results__slider owl-carousel">
+        <div class="results__item">
+          <div class="results__img">
+          <img src="img/result.png" alt="Иванова Ольга">
+        </div>
+          <div class="results__description">
+          <p class="results__name">Иванова Ольга</p>
+          <p class="results__weight">Похудела на 10 кг за 2 месяца</p>
+          <p>Вы обожаете это чувство, когда подходишь к зеркалу и видишь себя, худую, сeксуальную и просто лучше, чем вчера? Я обожаю. И впервые, я стала любить себя с этой стороны тогда, когда решила включить в свою жизнь спорт.</p>
+          <p>Но я весила больше чем хотелось бы: большие ноги, руки, живот желейный, который болтается из стороны в сторону и вываливается из джинс, ушки на руках и ногах – это ууужасно! И вот я решила приобрести курс. И включить в свою жизнь диету и спорт.</p>
+          <p>Я могу с уверенностью сказать, ваша дизнь после курса изменится в ЛУЧШУЮ сторону. Спасибо Виктории Болбат!</p>
+          </div>
+        </div>
+        <div class="results__item">
+          <div class="results__img">
+          <img src="img/result.png" alt="Иванова Ольга">
+        </div>
+          <div class="results__description">
+          <p class="results__name">Иванова Ольга</p>
+          <p class="results__weight">Похудела на 10 кг за 2 месяца</p>
+          <p>Вы обожаете это чувство, когда подходишь к зеркалу и видишь себя, худую, сeксуальную и просто лучше, чем вчера? Я обожаю. И впервые, я стала любить себя с этой стороны тогда, когда решила включить в свою жизнь спорт.</p>
+          <p>Но я весила больше чем хотелось бы: большие ноги, руки, живот желейный, который болтается из стороны в сторону и вываливается из джинс, ушки на руках и ногах – это ууужасно! И вот я решила приобрести курс. И включить в свою жизнь диету и спорт.</p>
+          <p>Я могу с уверенностью сказать, ваша дизнь после курса изменится в ЛУЧШУЮ сторону. Спасибо Виктории Болбат!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="problem">
+    <div class="problem__wrap wrap">
+      <ul class="problem__list">
+        <li class="problem__photo">
+          <picture>
+            <source media="(min-width: 980px)"
+                    srcset="img/bolbat-desktop.jpg"
+            >
+            <source media="(min-width: 768px)"
+                    srcset="img/bolbat-tablet.jpg"
+            >
+            <img src="img/bolbat-mobile.jpg" alt="Виктория Болбат">
+          </picture>
+        </li>
+        <li class="problem__text">
+          <h2 class="problem__title">Пророблема лишнего веса</h2>
+          <p>С такими проблемами встречаются абсолютно все люди с лишним весом. И почти всегда очевидным методом выбора кажется заставить себя сесть на очередную диету и купить очередной абонемент в тренажерку. Увы, это тупиковый путь, хоть и кажется таким простым.</p>
+          <p>Вы можете и дальше стучаться в закрытые двери в надежде, что они когда-нибудь откроются, как когда-то целых 10 лет это делала создатель курса Виктория Болбат: <b>она на себе испытала все «прелести» диет, разгрузочных дней, голодания, 2-хлетней булимии и чрезмерных физических тренировок.</b></p>
+          <p>А можете <b>всего за 6 недель</b> усвоить весь 15-летний путь Виктории, подружится с любимой едой, избавиться от малейшего напряжения относительно продуктов и прийти к осознанному питанию и природной стройности.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="programm" class="course">
+    <div class="course__wrap wrap">
+      <h2 class="course__title">программа курсов</h2>
+      <ul class="course__list">
+        <li class="course__element">
+          <div class="course__top">
+            <p class="course__name">Базовый курс</p>
+            <p class="course__price">199<span>$</span></p>
+          </div>
+          <div class="course__bottom">
+            <p class="course__info">Полная программа курса</p>
+            <p class="course__info">Инструкции, схемы, чек-листы и  другой раздаточный материал</p>
+            <p class="course__info">Записи вебинаров с ответами на вопросы</p>
+            <button class="course__button">Купить</button>
+          </div>
+        </li>
+        <li class="course__element">
+          <div class="course__top">
+            <p class="course__name">Стандартный курс</p>
+            <p class="course__price">299<span>$</span></p>
+          </div>
+          <div class="course__bottom">
+            <p class="course__info">Полная программа курса</p>
+            <p class="course__info">Инструкции, схемы, чек-листы и  другой раздаточный материал</p>
+            <p class="course__info">Записи вебинаров с ответами на вопросы</p>
+            <p class="course__info">Закрытый чат с участниками и кураторами</p>
+            <p class="course__info">Участие в живых вебинарах с ответами на вопросы</p>
+            <p class="course__info">Командное соревнование и постоянная поддержка кураторов и единомышленников</p>
+            <p class="course__info">Личный куратор, который поддержит и поможет не свернуть с пути</p>
+            <p class="course__info">Рекомендации по медицинским обследованиям и консультациям</p>
+            <button class="course__button">Купить</button>
+          </div>
+        </li>
+        <li class="course__element">
+          <div class="course__top">
+            <p class="course__name">Премиум курс</p>
+            <p class="course__price">399<span>$</span></p>
+          </div>
+          <div class="course__bottom">
+            <p class="course__info">Полная программа курса</p>
+            <p class="course__info">Инструкции, схемы, чек-листы и  другой раздаточный материал</p>
+            <p class="course__info">Записи вебинаров с ответами на вопросы</p>
+            <p class="course__info">	Закрытый чат с участниками и кураторами</p>
+            <p class="course__info">Участие в живых вебинарах с ответами на вопросы</p>
+            <p class="course__info">Командное соревнование и постоянная поддержка кураторов и единомышленников</p>
+            <p class="course__info">Личный куратор, который поддержит и поможет не свернуть с пути</p>
+            <p class="course__info">Рекомендации по медицинским обследованиям и консультациям</p>
+            <p class="course__info">12 онлайн-консультаций с Викторией Болбат</p>
+            <button class="course__button">Купить</button>
+          </div>
+        </li>
+        <li class="course__element course__element--weight">
+          <div class="weight">
+            <h3 class="weight__title">Узнай свой идеальный вес</h3>
+            <p class="weight__diary">Мы пришлем тебе дневник питания, чтобы вы начали контролировать свой рацион уже сегодня</p>
+            <form action="#">
+              <div class="weight__form">
+                <div class="weight__input">
+                  <label for="name">Введите Ваше имя:</label>
+                  <input id="name" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="weight__input">
+                  <label for="email">Введите e-mail:</label>
+                  <input id="email" type="email" placeholder="Ваш e-mail">
+                </div>
+                <div class="weight__input">
+                  <label for="ves">Введите свой вес и рост:</label>
+                  <input id="ves" type="text" placeholder="Ваш вес и рост">
+                </div>
+                <div class="weight__input weight__select">
+                  <label for="age">Ваш возраст:</label>
+                  <select id="age" name="age">
+                    <option value="1">Менее 25 лет</option>
+                    <option value="2">25-45 лет</option>
+                    <option value="3">Более 45 лет</option>
+                  </select>
+                </div>
+                <div class="weight__input weight__select">
+                  <label for="overweight">С какого времени беспокоит лишний вес?</label>
+                  <select id="overweight" name="overweight">
+                    <option value="1">С детства была немного крупнее сверстников</option>
+                    <option value="2">В детстве была худенькой, в подростковом возрасте произошел резкий набор веса</option>
+                    <option value="3">Лишний вес связан с изменениями в жизни: переезд, смена работы, семейного положения, резкое увеличение стрессовых факторов и др.</option>
+                    <option value="4">Лишний вес появился при беременности и после родов</option>
+                    <option value="5">Вес стал нарастать после наступления менопаузы</option>
+                    <option value="6">Лишний вес появился резко в течение короткого времени (10 и более кг менее, чем за полгода), связи с какими-то жизненными ситуациями не прослеживается.</option>
+                  </select>
+                </div>
+                <div class="weight__input weight__select">
+                  <label for="son">Оцените примерный уровень стресса в жизни</label>
+                  <select id="stress" name="stress">
+                    <option value="1">0 – моя жизнь довольно спокойна, конфликтов обычно не бывает, на работе и в семье все в порядке. Вид занятости не подразумевает напряжения и беспокойства.</option>
+                    <option value="1">1 - стрессовые ситуации время от времени случаются, но получается с ними справляться. Знаю, как себя поддержать: имею регулярную психологическую поддержку/владею методиками релаксации/умею переключаться на ресурсные для меня мысли и занятия.</option>
+                    <option value="1">2 – стрессовые ситуации время от времени случаются и могут выбить меня из колеи. Хотелось бы научиться справляться со стрессом.</option>
+                    <option value="1">3 – живу в состоянии хронического стресса и тревоги. В работе или семье присутствует постоянное напряжение. Иногда уровень стресса сложно контролировать. Часто заедаю стресс, тревогу и другие негативные эмоции.</option>
+                  </select>
+                </div>
+                <div class="weight__input weight__select">
+                  <label for="son">Вы достаточно спите?</label>
+                  <select id="son" name="son">
+                    <option value="1">Да</option>
+                    <option value="1">Нет</option>
+                  </select>
+                </div>
+                <div class="weight__input weight__select">
+                  <label for="health">Ваш лишний вес связан с проблемами со здоровьем?</label>
+                  <select id="health" name="health">
+                    <option value="1">Да, имеются отклонения в состоянии здоровья. Наблюдаюсь по этому поводу у эндокринолога, либо другого специалиста.</option>
+                    <option value="1">Не хожу к врачам, давно не обследовалась.</option>
+                    <option value="1">Обследована. Серьезных отклонений в состоянии здоровья не выявлено</option>
+                  </select>
+                </div>
+                <div class="weight__checkbox">
+                  <input id="conf" type="checkbox" name="conf" checked disabled>
+                  <label for="conf">Я соглашаюсь с условиями обработки персональных данных</label>
+                </div>
+                <div class="weight__button">
+                  <button type="submit">Получить дневник питания</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="course__element course__element--cite">
+          <div class="cite">
+            <p class="cite__text">«Мир полон стереотипов и бессмысленных ограничений. Делая акцент на этом, мы теряем саму суть работы с лишним весом – мы забываем, что это – про заботу о себе, про понимание своих желаний, про чувствительность к телу и его потребностям. А потому, вместо заботы выбираем насилие над собой, как привычное и социально приемлемое явление. «Соберись, тряпка!», «Через не могу!», «Стисни зубы и работай!», «Попей водички и ложись спать!» - звучит из-за каждого угла. Только ведь, это не про внимание, а про эксплуатацию собственного тела. А когда кого-то насилуют и эксплуатируют, он редко от этого становится счастливым… Не правда ли?”</p>
+            <p class="cite__author">Виктория Болбат, диетолог</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="article" class="article">
+    <div class="article__wrap wrap">
+      <h2 class="article__title">Полезные статьи</h2>
+      <ul class="article__list">
+        <li class="article__item">
+          <div class="article__img">
+            <a class="article__link"  href="#">
+              <img src="img/article1.jpg" alt="Статья 1">
+              <span>Читать полностью</span>
+            </a>
+          </div>
+          <div class="article__bottom">
+            <p class="article__date">15 Марта 2019</p>
+            <a class="article__sub-title" href="#">Спасение сладкоежек</a>
+            <p class="article__description">Но «они же высококалорийные» скажешь ты. «От них я толстею!» и будешь права. Да, легко располнеть на тортиках, но есть несколько маленьких правил</p>
+          </div>
+        </li>
+        <li class="article__item">
+          <div class="article__img">
+            <a class="article__link"  href="#">
+              <img src="img/article2.jpg" alt="Статья 1">
+              <span>Читать полностью</span>
+            </a>
+          </div>
+          <div class="article__bottom">
+            <p class="article__date">15 Марта 2019</p>
+            <a class="article__sub-title" href="#">Спасение сладкоежек</a>
+            <p class="article__description">Но «они же высококалорийные» скажешь ты. «От них я толстею!» и будешь права. Да, легко располнеть на тортиках, но есть несколько маленьких правил правил правил правил правил правил</p>
+          </div>
+        </li>
+        <li class="article__item">
+          <div class="article__img">
+            <a class="article__link"  href="#">
+              <img src="img/article3.jpg" alt="Статья 1">
+              <span>Читать полностью</span>
+            </a>
+          </div>
+          <div class="article__bottom">
+            <p class="article__date">15 Марта 2019</p>
+            <a class="article__sub-title" href="#">Спасение сладкоежек</a>
+            <p class="article__description">Но «они же высококалорийные» скажешь ты. «От них я толстею!» и будешь права. Да, легко располнеть на тортиках, но есть несколько маленьких правил</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrap wrap">
+      <div class="footer__logo">
+        <img src="img/footer-logo.png" alt="Логотип">
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#history">Найди свою историю</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#advantages">Наши преимущества</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#video">Видео</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#author">Об авторе</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#result">Результаты</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#programm">Программа</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#article">Статьи</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <p>
+          <a class="footer__phone" href="tel:+375445628353">+375445628353</a>
+        </p>
+        <p>
+          <a class="footer__mail" href="mailto:info@e-weight.co">info@e-weight.co</a>
+        </p>
+        <p>
+          <a class="footer__telegram" href="tg://resolve?domain=+375445628353">+375445628353</a>
+        </p>
+      </div>
+      <div class="footer__subscribe">
+        <p class="footer__form-title">Подпишитесь на нашу рассылку</p>
+        <form action="#">
+          <div class="footer__input">
+            <label for="footer-mail">Подпишитесь на рассылку</label>
+            <input id="footer-mail" type="email" name="email" placeholder="Ваш e-mail">
+            <button type="submit" aria-label="Подписаться">
+              <img src="img/arrow-subscribe.svg" alt="Подписаться">
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__socials">
+        <p class="footer__socials-title">Мы в соц. сетях</p>
+        <ul class="socials socials--footer">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__svg">
+                <use xlink:href="img/symbol/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__svg">
+                <use xlink:href="img/symbol/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__svg">
+                <use xlink:href="img/symbol/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copy">Все права защищены</p>
+    </div>
+  </footer>
 </div>
 </body>
 </html>

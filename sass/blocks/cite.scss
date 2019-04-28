@@ -1,0 +1,53 @@
+.cite {
+
+}
+
+.cite__text {
+  position: relative;
+  font-style: italic;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(19px);
+  text-align: left;
+  color: #4A4A4A;
+
+  &::after {
+    position: absolute;
+    content: "”";
+    font-size: px-to-rem(50px);
+    line-height: px-to-rem(5px);
+    right: 0;
+    bottom: -15px;
+  }
+
+  &::before {
+    content: "“";
+    font-size: px-to-rem(50px);
+    line-height: px-to-rem(20px);
+    vertical-align: bottom;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+.cite__author {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(19px);
+  color: $second;
+  text-align: right;
+  margin: px-to-rem(10px) 0;
+}
+
+@media (min-width: 768px) {
+
+  .cite {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .cite__text {
+    font-size: px-to-rem(15px);
+    line-height: px-to-rem(20px);
+  }
+
+}

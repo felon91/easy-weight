@@ -43,6 +43,7 @@
     flex-basis: 43.2%;
     font-size: px-to-rem(15px);
     line-height: px-to-rem(20px);
+    padding: px-to-rem(20px) 0;
   }
 
 }
@@ -59,6 +60,7 @@
 
   .information__item {
     position: relative;
+    padding: px-to-rem(25px) 0;
 
     p {
       padding-left: 10px;

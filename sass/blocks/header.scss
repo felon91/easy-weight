@@ -131,7 +131,7 @@
 
 @media (min-width: 980px) {
   .header {
-    background: url("../img/desktop-bg.png") center 5px no-repeat,
+    background: url("../img/desktop-bg.png") center top no-repeat,
     linear-gradient(180deg, #79FE93 0%, #9AFFED 100%), rgba(170, 254, 214, 0.94);
     //background-size: cover;
   }
@@ -139,6 +139,16 @@
   .header__wrap {
     padding-left: px-to-rem(20px);
     padding-right: px-to-rem(20px);
+    padding-bottom: 0;
+  }
+
+  .header__wrap--single {
+    padding-bottom: px-to-rem(20px);
+
+    .header__link {
+      margin-bottom: px-to-rem(60px);
+    }
+
   }
 
   .header__hamburger {
@@ -161,11 +171,13 @@
   .header__information {
     top: auto;
     bottom: 0;
+    position: static;
+    transform: translateX(0);
     padding: px-to-rem(20px);
   }
 
   .header__link {
-    margin-bottom: px-to-rem(350px);
+    margin-bottom: px-to-rem(315px);
 
     &:hover {
       background-color: $primary-hover;

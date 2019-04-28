@@ -1,0 +1,139 @@
+.form-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+.form-modal--active {
+  opacity: 1;
+  z-index: 999;
+}
+
+.form-modal__block {
+  max-width: 555px;
+  margin: px-to-rem(25px) auto;
+  background-color: #D9FFFD;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  padding: px-to-rem(20px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.form-modal__close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.form-modal__title {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(30px);
+  text-align: center;
+  font-weight: 700;
+  margin: px-to-rem(35px) 0 px-to-rem(20px);
+}
+
+.form-modal__input {
+  margin: px-to-rem(20px) 0;
+
+  label {
+    @include visually-hidden;
+  }
+
+  input {
+    background-color: $white;
+    border-radius: 30px;
+    width: 100%;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(24px);
+    padding: px-to-rem(19px) px-to-rem(20px);
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid transparent;
+
+    &::placeholder {
+      color: rgba(74, 74, 74, 0.5);
+      opacity: 1;
+    }
+
+    &:focus {
+      border-color: $primary;
+    }
+
+  }
+
+}
+
+.form-modal__button {
+  margin: px-to-rem(30px) auto 0;
+
+  button, input[type="submit"] {
+    font-weight: 700;
+    font-size: px-to-rem(15px);
+    line-height: px-to-rem(26px);
+    text-align: center;
+    color: $white;
+    width: 100%;
+    border-radius: 40px;
+    background-color: $primary;
+    border: none;
+    box-shadow: none;
+    padding: px-to-rem(15px) 0;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-property: background-color;
+
+    &:active {
+      background-color: $primary-active;
+    }
+
+  }
+
+}
+
+div.wpcf7-validation-errors {
+  font-size: px-to-rem(15px);
+  border: none !important;
+  color: #ff0000;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+span.wpcf7-not-valid-tip {
+  font-size: px-to-rem(14px) !important;
+  line-height: px-to-rem(19px);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.wpcf7-not-valid {
+  border: 1px solid #ff0000 !important;
+}
+
+div.wpcf7 .ajax-loader {
+  display: block !important;
+  margin: px-to-rem(20px) auto 0 !important;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: none !important;
+  font-size: px-to-rem(15px);
+  margin-top: 0 !important;
+  text-align: center;
+}

@@ -1,0 +1,72 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+.modal--active {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal__block {
+  max-width: 735px;
+  margin: px-to-rem(25px) auto;
+  background-color: #D9FFFD;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  padding: px-to-rem(20px);
+  box-sizing: border-box;
+  position: relative;
+
+  p {
+    color: #4A4A4A;
+    margin: px-to-rem(20px) 0;
+  }
+
+  .modal__name {
+    font-size: px-to-rem(15px);
+    line-height: px-to-rem(20px);
+    margin-bottom: 0;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  .modal__post {
+    color: $second;
+    margin-top: 0;
+  }
+
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+  .modal__block {
+    padding: px-to-rem(50px);
+  }
+
+  .modal__close {
+    right: 39px;
+    top: 30px;
+  }
+
+}

@@ -1,0 +1,135 @@
+.problem__list {
+  padding: 0;
+  list-style: none;
+}
+
+.problem__wrap {
+  margin-top: px-to-rem(75px);
+  margin-bottom: px-to-rem(55px);
+}
+
+.problem__photo {
+  margin: px-to-rem(40px) 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+}
+
+.problem__text {
+  position: relative;
+  padding-left: px-to-rem(30px);
+
+  &::before {
+    width: 104px;
+    height: 2px;
+    display: block;
+    margin: 0 auto px-to-rem(-10px);
+    content: "";
+    background-color: #EAA098;
+  }
+
+  p {
+    font-size: px-to-rem(15px);
+    line-height: px-to-rem(26px);
+    color: #4A4A4A;
+    margin: px-to-rem(20px) 0;
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+}
+
+.problem__title {
+  color: $second;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: translateY(-50%) rotate(180deg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  white-space: nowrap;
+  margin: 0;
+  font-weight: 700;
+  font-size: px-to-rem(15px);
+  line-height: px-to-rem(20px);
+  letter-spacing: 0.36em;
+}
+
+@media (min-width: 768px) {
+
+  .problem__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .problem__title {
+    left: -15px;
+  }
+
+  .problem__wrap {
+    padding-left: px-to-rem(40px);
+    padding-right: px-to-rem(40px);
+    margin-top: px-to-rem(75px);
+    margin-bottom: px-to-rem(75px);
+  }
+
+  .problem__photo {
+    order: 2;
+    flex-basis: 45%;
+    margin-left: px-to-rem(24px);
+  }
+
+  .problem__text {
+    flex-basis: 55%;
+    margin-right: px-to-rem(24px);
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .problem {
+    position: relative;
+  }
+
+  .problem__wrap {
+    padding-left: px-to-rem(20px);
+    padding-right: px-to-rem(20px);
+  }
+
+  .problem__title {
+    left: -5px;
+  }
+
+  .problem__photo {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    right: 0;
+    width: calc(45% - 24px - 30px);
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      left:0;
+    }
+
+  }
+  
+  .problem__text {
+    background-color: transparent;
+
+    &::before {
+      margin-bottom: 20px;
+    }
+
+  }
+
+}

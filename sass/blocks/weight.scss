@@ -1,0 +1,236 @@
+.weight__title {
+  font-weight: 700;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(24px);
+  text-align: center;
+  text-transform: uppercase;
+  margin: px-to-rem(20px) 0 px-to-rem(15px);
+
+  &::before {
+    width: 104px;
+    height: 2px;
+    display: block;
+    margin: 0 auto px-to-rem(15px);
+    content: "";
+    background-color: #EAA098;
+  }
+}
+
+.weight__diary {
+  text-align: center;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(18px);
+  color: #4A4A4A;
+  margin: 0;
+}
+
+.weight__input {
+  margin: px-to-rem(20px) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  label {
+    text-align: left;
+    display: block;
+    border: none;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(18px);
+    color: #4A4A4A;
+    margin-bottom: px-to-rem(5px);
+    margin-left: px-to-rem(20px);
+  }
+
+  input {
+    background-color: $white;
+    border-radius: 30px;
+    width: 100%;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(24px);
+    padding: px-to-rem(19px) px-to-rem(20px);
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid transparent;
+
+    &::placeholder {
+      color: rgba(74, 74, 74, 0.5);
+      opacity: 1;
+    }
+
+    &:focus {
+      border-color: $primary;
+    }
+
+  }
+
+}
+
+.weight__form {
+  margin: px-to-rem(40px) 0 0;
+}
+
+.weight__checkbox {
+  text-align: left;
+
+  input {
+    display: none;
+
+    &:checked {
+
+      + label {
+
+        &::before {
+          content: "";
+          width: 10px;
+          height: 5px;
+          border-left: 1px solid $black;
+          border-bottom: 1px solid $black;
+          position: absolute;
+          left: 4px;
+          top: calc(50% - 2px);
+          transform: translateY(-50%) rotate(-45deg);
+        }
+
+      }
+
+    }
+
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(19px);
+    color: #4A4A4A;
+    padding-left: 30px;
+    display: block;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      border: 1px solid $black;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}
+
+.weight__button {
+  margin: px-to-rem(30px) auto 0;
+
+  button, input[type="submit"] {
+    font-weight: 700;
+    font-size: px-to-rem(15px);
+    line-height: px-to-rem(26px);
+    text-align: center;
+    color: $white;
+    width: 100%;
+    border-radius: 40px;
+    background-color: $primary;
+    border: none;
+    box-shadow: none;
+    padding: px-to-rem(15px) 0;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-property: background-color;
+
+    &:active {
+      background-color: $primary-active;
+    }
+
+  }
+
+}
+
+div.wpcf7-validation-errors {
+  font-size: px-to-rem(15px);
+  border: none !important;
+  color: #ff0000;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+span.wpcf7-not-valid-tip {
+  font-size: px-to-rem(14px) !important;
+  line-height: px-to-rem(19px);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.wpcf7-not-valid {
+  border: 1px solid #ff0000 !important;
+}
+
+div.wpcf7 .ajax-loader {
+  display: block !important;
+  margin: px-to-rem(20px) auto 0 !important;
+}
+
+div.wpcf7-mail-sent-ok {
+  border-color: $primary !important;
+  font-size: px-to-rem(15px);
+  margin-top: 0 !important;
+}
+
+@media (min-width: 768px) {
+
+  .weight__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .weight__title {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(38px);
+  }
+
+  .weight__input {
+    flex-basis: calc(50% - 15px);
+    margin: px-to-rem(15px) 0;
+    max-width: calc(50% - 15px);
+  }
+
+  .weight__checkbox {
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: px-to-rem(25px);
+    margin-bottom: px-to-rem(5px);
+  }
+
+  .weight__button {
+    flex-basis: 100%;
+
+    button, input[type="submit"] {
+      max-width: 350px;
+    }
+
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .weight__button {
+
+    button, input[type="submit"] {
+
+      &:hover {
+        background-color: $primary-hover;
+      }
+
+    }
+
+  }
+
+}
