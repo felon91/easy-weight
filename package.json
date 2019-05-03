@@ -34,5 +34,8 @@
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^6.0.1",
     "rollup": "^1.0.2"
+  },
+  "dependencies": {
+    "tar": "^4.4.2"
   }
 }

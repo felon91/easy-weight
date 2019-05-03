@@ -18,6 +18,10 @@
     display: block !important;
   }
 
+  .fixed-menu--single {
+    display: block !important;
+  }
+
   .fixed-menu__wrap {
     padding-top: px-to-rem(120px);
     padding-bottom: px-to-rem(70px);
@@ -81,6 +85,10 @@
     z-index: 100;
     width: 100%;
     display: none;
+  }
+
+  .fixed-menu--single {
+    display: none !important;
   }
 
   .fixed-menu__close {

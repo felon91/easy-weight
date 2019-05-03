@@ -19,11 +19,12 @@ $(document).ready(function () {
     if (window.innerWidth >= 980) {
 
       if ($(this).scrollTop() > 100) {
-        $('.fixed-menu').slideDown();
+        $('.fixed-menu--main').slideDown();
+        $('.fixed-menu--main').slideDown();
         return false;
       }
       else {
-        $('.fixed-menu').slideUp();
+        $('.fixed-menu--main').slideUp();
       }
 
     }
@@ -34,7 +35,7 @@ $(document).ready(function () {
 
     if (window.innerWidth <= 980) {
 
-      $('.fixed-menu').removeAttr('style');
+      $('.fixed-menu--main').removeAttr('style');
 
     }
 
